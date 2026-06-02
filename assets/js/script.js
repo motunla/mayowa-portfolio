@@ -35,7 +35,7 @@ if(form){
         form.querySelector('button[type="submit"]').disabled = true;
         const res = await fetch(action, {method:'POST', body: data, headers:{'Accept':'application/json'}});
         if(res.ok){
-          formStatus && (formStatus.textContent = 'Thanks — message sent.');
+          formStatus && (formStatus.textContent = 'Thanks - message sent.');
           form.reset();
         } else {
           const json = await res.json().catch(()=>null);
@@ -48,7 +48,7 @@ if(form){
       }
     } else {
       // Fallback: local skeleton behavior
-      formStatus && (formStatus.textContent = 'Thanks — message captured (local).');
+      formStatus && (formStatus.textContent = 'Thanks - message captured (local).');
       form.reset();
     }
   })

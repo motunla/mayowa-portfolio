@@ -14,7 +14,7 @@ html, body {
 }
 
 :root {
-	--bg: #0f1724; /* dark navy */
+	--bg: #ffffff; /* dark navy */
 	--card: #0b1220;
 	--muted: #94a3b8;
 	--accent: #06b6d4; /* teal */
