@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'>
+  <rect width='100%' height='100%' fill='#072733'/>
+  <rect x='20' y='20' width='160' height='120' fill='#083a4a' rx='8'/>
+  <rect x='200' y='20' width='180' height='80' fill='#0b5261' rx='6'/>
+  <text x='30' y='170' fill='#8fd8e2' font-family='Arial' font-size='18'>Health Risk Analysis</text>
+</svg>
