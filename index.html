@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mayowa Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#">Mayowa</a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="site-nav" class="site-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="resume">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Hi — I'm Mayowa Nelson Otunla</h1>
+                <p>Data analyst — statistics, Python, R, and practical analytics.</p>
+                <p>
+                  <a href="https://www.linkedin.com/in/mayowa-otunla-b70410293/" target="_blank">LinkedIn</a>
+                  · <a href="mailto:Mayowaotunla@gmail.com">Mayowaotunla@gmail.com</a>
+                  · Alpharetta, GA
+                </p>
+                <p><a class="cta" href="#portfolio">See my work</a></p>
+            </div>
+        </section>
+
+                <section id="about" class="about container">
+                        <h2>About</h2>
+                        <p>
+                            I'm a Data Analyst studying Mathematics with a minor in Applied Statistics & Data Analysis at Kennesaw State University (expected Fall 2026).
+                            I work with R, Python, SQL and Power BI to clean data, build models, and present insights.
+                        </p>
+
+                        <h3>Education</h3>
+                        <p>Kennesaw State University — B.S. Mathematics, Minor: Applied Statistics & Data Analysis</p>
+
+                        <h3>Experience</h3>
+                        <p><strong>AI Trainer</strong>, Handshake (Remote) — Dec 2025 – Present. Analyze and validate AI outputs, improve response quality.</p>
+
+                        <h3>Skills</h3>
+                        <p>R · Python · SQL · Excel · Power BI · SAS Studio · Regression · EDA · Data Cleaning</p>
+                </section>
+
+        <section id="portfolio" class="portfolio container">
+            <h2>Portfolio</h2>
+            <div class="projects-grid" id="projects-grid">
+
+                <article class="card">
+                    <div class="card-media"></div>
+                    <h3>Health Risk Analysis: Stroke Risk in Older Adults</h3>
+                    <p class="card-desc">R · Logistic regression on a 10,000-record healthcare dataset. Achieved AUC 0.834; identified hypertension, diabetes, and heart disease as major predictors.</p>
+                    <p class="card-links"><a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Report</a> · <a href="#">Code</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-media"></div>
+                    <h3>Understanding What Drives Music Popularity on Spotify</h3>
+                    <p class="card-desc">Python · Analysis of 32,000+ tracks; feature engineering (genre, release timing) and modeling (Linear Regression, Random Forest, SVR) to identify drivers of popularity.</p>
+                    <p class="card-links"><a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Report</a> · <a href="#">Code</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-media"></div>
+                    <h3>Impact of YouTube Post Time on Video Performance</h3>
+                    <p class="card-desc">Excel · SQLite · Power BI. Engineered views-per-day, post-hour; identified 5–7 PM as highest-performing posting window using aggregations and visual analysis.</p>
+                    <p class="card-links"><a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Report</a> · <a href="#">Code</a></p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Phone: 470-290-9856 · <a href="mailto:Mayowaotunla@gmail.com">Mayowaotunla@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/mayowa-otunla-b70410293/" target="_blank">LinkedIn</a> · <a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Full project portfolio</a></p>
+            <form id="contact-form" class="contact-form">
+                <label>Name<input type="text" name="name" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Message<textarea name="message" rows="5" required></textarea></label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Mayowa — Built with care.</div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
