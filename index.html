@@ -19,7 +19,7 @@
             <nav id="site-nav" class="site-nav">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -27,36 +27,53 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
-                                <h1>Hi, I'm Mayowa Otunla. Welcome to my Portfolio!</h1>
-                                <p>Data Analyst with a strong foundation of Mathematics, Statistics, and Data Analysis, passionate about turning complexity into something understandable and useful.</p>
-                <p><a class="cta" href="#portfolio">See my work</a></p>
+            <p class="hero-badge"><span>Data Analyst Portfolio</span></p>
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1><span>Mayowa</span> <span>Otunla</span></h1>
+                    <p class="hero-tagline">Turning complex data into <strong>clear insights</strong></p>
+                    <p><a class="cta" href="#portfolio">See my work</a></p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-photo-accent">
+                        <img class="hero-photo" src="assets/images/profile.jpg" alt="Mayowa Otunla headshot">
+                    </div>
+                </div>
             </div>
         </section>
 
                 <section id="about" class="about container">
-                        <h2>About</h2>
-                        <p>
-                            I'm a Data Analyst studying Mathematics with a minor in Applied Statistics & Data Analysis at Kennesaw State University (expected Fall 2026).
-                            I work with R, Python, SQL and Power BI to clean data, build models, and present insights.
-                        </p>
-
-                        <h3>Education</h3>
-                        <p>Kennesaw State University &mdash; B.S. Mathematics, Minor: Applied Statistics & Data Analysis</p>
-
-                        <h3>Experience</h3>
-                        <p><strong>AI Trainer</strong>, Handshake (Remote) &mdash; Dec 2025 &ndash; Present. Analyze and validate AI outputs, improve response quality.</p>
-
-                        <h3>Skills</h3>
-                        <p>R &middot; Python &middot; SQL &middot; Excel &middot; Power BI &middot; SAS Studio &middot; Regression &middot; EDA &middot; Data Cleaning</p>
+                        <h2>About me</h2>
+                        <div class="about-story">
+                            <p>I have always been drawn to problems that require structure and clear thinking. Growing up with a natural inclination toward mathematics, it felt like a natural path to pursue it seriously at Kennesaw State University, where I am studying Mathematics with a minor in Applied Statistics and Data Analysis.</p>
+                            <p>What pulled me deeper into data analysis was realizing how much is hidden in plain sight. Behind every dataset is a story waiting to be told, a pattern worth uncovering, or a process that could work better. Learning to find those things through various programming tools and diverse datasets became something I genuinely enjoyed rather than just studied.</p>
+                            <p>I want to work on problems where the analysis actually changes something, whether that means helping a team make a better decision, identifying where something is breaking down, or presenting findings in a way that non-technical stakeholders can understand and act on. Data is most impactful when it is delivered clearly to the people who need it, and that is the standard I hold my work to.</p>
+                        </div>
+                        <div class="about-grid about-top">
+                            <div class="about-block">
+                                <p class="section-label">Technical skills</p>
+                                <div class="pill-row">
+                                    <span class="pill">R</span>
+                                    <span class="pill">Python</span>
+                                    <span class="pill">SQL</span>
+                                    <span class="pill">Power BI</span>
+                                    <span class="pill">SAS Studio</span>
+                                    <span class="pill">Excel</span>
+                                    <span class="pill">Regression</span>
+                                    <span class="pill">EDA</span>
+                                    <span class="pill">Data cleaning</span>
+                                </div>
+                            </div>
+                        </div>
                 </section>
 
         <section id="portfolio" class="portfolio container">
-            <h2>Portfolio</h2>
+            <h2>Projects</h2>
             <div class="projects-grid" id="projects-grid">
 
                 <article class="card">
-                    <img class="card-media" src="assets/images/project1.svg" alt="Health Risk Analysis">
+                    <img class="card-media" src="assets/images/stroke-risk-healthcare.jpg" alt="Healthcare worker speaking with a patient">
                     <h3>Health Risk Analysis: Stroke Risk in Older Adults</h3>
                     <p class="card-desc">R &middot; Logistic regression on a 10,000-record healthcare dataset. Achieved AUC 0.834; identified hypertension, diabetes, and heart disease as major predictors.</p>
                     <p class="card-links"><a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Report</a> &middot; <a href="#">Code</a></p>
@@ -70,7 +87,7 @@
                 </article>
 
                 <article class="card">
-                    <img class="card-media" src="assets/images/project3.svg" alt="YouTube Timing Analysis">
+                    <img class="card-media" src="assets/images/youtube-logo.jpg" alt="YouTube logo">
                     <h3>Impact of YouTube Post Time on Video Performance</h3>
                     <p class="card-desc">Excel &middot; SQLite &middot; Power BI. Engineered views-per-day, post-hour; identified 5&ndash;7 PM as highest-performing posting window using aggregations and visual analysis.</p>
                     <p class="card-links"><a href="https://neighborly-oregano-123.notion.site/Data-Analyst-Project-Portfolio-ffe294aceb9d40918fb24fd4e80f431c" target="_blank">Report</a> &middot; <a href="#">Code</a></p>
@@ -80,17 +97,17 @@
         </section>
 
         <section id="contact" class="contact container">
-            <h2>Contact</h2>
-            <p>Phone: 470-290-9856</p>
-            <p>Email: <a href="mailto:Mayowaotunla@gmail.com">Mayowaotunla@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/mayowa-otunla-b70410293/" target="_blank">LinkedIn</a></p>
-            <form id="contact-form" class="contact-form">
-                <label>Name<input type="text" name="name" required></label>
-                <label>Email<input type="email" name="email" required></label>
-                <label>Message<textarea name="message" rows="5" required></textarea></label>
-                <button type="submit">Send</button>
-                <p id="form-status" class="form-status" aria-live="polite"></p>
-            </form>
+            <p class="section-label">Connect</p>
+            <div class="pill-row connect-links">
+                <a class="pill pill-link" href="https://www.linkedin.com/in/mayowa-otunla-b70410293/" target="_blank">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+                    LinkedIn
+                </a>
+                <a class="pill pill-link" href="mailto:Mayowaotunla@gmail.com">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 7-10 6L2 7"/></svg>
+                    Email
+                </a>
+            </div>
         </section>
     </main>
 

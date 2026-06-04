@@ -22,34 +22,3 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   })
 });
 
-// Simple contact form handler (skeleton)
-const form = document.getElementById('contact-form');
-const formStatus = document.getElementById('form-status');
-if(form){
-  form.addEventListener('submit', async e=>{
-    e.preventDefault();
-    const action = form.getAttribute('action') || '';
-    const data = new FormData(form);
-    if(action.includes('formspree.io')){
-      try{
-        form.querySelector('button[type="submit"]').disabled = true;
-        const res = await fetch(action, {method:'POST', body: data, headers:{'Accept':'application/json'}});
-        if(res.ok){
-          formStatus && (formStatus.textContent = 'Thanks - message sent.');
-          form.reset();
-        } else {
-          const json = await res.json().catch(()=>null);
-          formStatus && (formStatus.textContent = json && json.error ? json.error : 'Submission failed.');
-        }
-      }catch(err){
-        formStatus && (formStatus.textContent = 'Submission error.');
-      }finally{
-        form.querySelector('button[type="submit"]').disabled = false;
-      }
-    } else {
-      // Fallback: local skeleton behavior
-      formStatus && (formStatus.textContent = 'Thanks - message captured (local).');
-      form.reset();
-    }
-  })
-}
